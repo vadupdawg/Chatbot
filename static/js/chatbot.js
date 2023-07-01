@@ -38,7 +38,7 @@ try {
     const timestamp = getTimestamp();
 
     let responseText = chatbotResponse;
-    $("#chat-output").append(`<div class="message bot"><strong>NovaSkin:</strong> ${responseText}<span class="timestamp-bot" style="float: left;">${timestamp}</span></div>`);
+    $("#chat-output").append(`<div class="message bot"><strong>GroeimetAi:</strong> ${responseText}<span class="timestamp-bot" style="float: left;">${timestamp}</span></div>`);
     $("#chat-output").scrollTop($("#chat-output")[0].scrollHeight);
 } catch (error) {
     console.error("Error:", error);
@@ -48,7 +48,7 @@ try {
             await askChatBot(`${userMessage} maak het antwoord zo klein mogelijk`, retryCount - 1);
         } else {
             console.log('Failed after 3 attempts');
-            $("#chat-output").append(`<div class="message bot"><strong>NovaSkin:</strong> Het antwoord op deze vraag is te lang, probeer de vraag kleiner te maken</div>`);
+            $("#chat-output").append(`<div class="message bot"><strong>GroeimetAi:</strong> Het antwoord op deze vraag is te lang, probeer de vraag kleiner te maken</div>`);
         }
     }
 } finally {
@@ -66,7 +66,7 @@ typingAnimation = setInterval(() => {
   } else {
     dots = "";
   }
-  $("#typing-indicator").text(`NovaSkin is typing${dots}`);
+  $("#typing-indicator").text(`GroeimetAi is typing${dots}`);
 }, 500);
 }
 
@@ -116,5 +116,5 @@ $(document).ready(async function () {
   const jsonResponse = await response.json();
   const chatbotResponse = jsonResponse.chatbot_response;
 
-  $("#chat-output").append(`<div class="message bot"><strong>NovaSkin:</strong> ${chatbotResponse}<span class="timestamp-bot" style="float: left;">${timestamp}</span></div>`);
+  $("#chat-output").append(`<div class="message bot"><strong>GroeimetAi:</strong> ${chatbotResponse}<span class="timestamp-bot" style="float: left;">${timestamp}</span></div>`);
 });
