@@ -5,7 +5,7 @@ google-cloud-storage
 langchain
 lxml
 bs4
-aiohttp
+aiohttp==3.8.4
 tqdm
 openai
 chromadb
