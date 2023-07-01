@@ -1,0 +1,12 @@
+gunicorn
+flask
+nest_asyncio
+google-cloud-storage
+langchain==0.0.20
+lxml
+bs4
+aiohttp==3.8.4
+tqdm
+openai
+chromadb
+tiktoken
