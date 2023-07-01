@@ -2,10 +2,10 @@ gunicorn
 flask
 nest_asyncio
 google-cloud-storage
-langchain==0.0.20
+langchain
 lxml
 bs4
-aiohttp==3.8.4
+aiohttp
 tqdm
 openai
 chromadb
