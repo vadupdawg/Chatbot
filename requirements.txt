@@ -2,7 +2,7 @@ gunicorn
 flask
 nest_asyncio
 google-cloud-storage
-langchain
+langchain==0.0.202
 lxml
 bs4
 aiohttp==3.8.4
